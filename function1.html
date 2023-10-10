@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Greeting()
+        {
+            console.log('hello');
+        }
+        function getName()
+        {
+            return 'Sam';
+        }
+        function Add(x,y)
+        {
+            console.log(x+y);
+        }
+        //default parameters
+        function Multiply(x,y=5)
+        {
+            return x*y;
+        }
+        Greeting()
+        Greeting()
+        console.log(getName())
+        Add(2,3);
+        console.log(Multiply(4,5));
+        console.log(Multiply(3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         var A= [1,2,3,1,2,32,2,3,2,3,5];
+
+         var result=new Map();
+
+         for(x of A)
+         {
+            if(result.has(x))
+            {
+               result.set(x,result.get(x)+1) ;
+            }
+            else{
+                result.set(x,1);
+            }
+         }
+
+        console.log(result);         
+
+         1  - 2
+         2  - 4
+         3  - 3
+         32 - 1
+         5  - 1
+
+        //Set
+        var numbers=new Set([11,11,22,3,54,16,1,4,65,6,2,2,2,3,5,2]); 
+        numbers.add(4);
+        numbers.delete(3);
+        numbers.keys(0)
+        console.log(numbers.keys(0));
+       // numbers.clear();       
+        for(n of numbers.entries())
+        console.log(n);
+       // console.log(numbers.size);
+
+        var m2=new Map();
+        m2.set(1998,'Amazon');
+        m2.set(2000,'Hp');
+        m2.set(1996,'Dell');
+        m2.set(1999,'Mac');
+        m2.set(1997,'SAP');
+      
+       var max= Number.MIN_VALUE;
+
+        for(x of m2.keys())
+        {
+            console.log(x);
+            if(x>max)
+             max=x
+            
+        }
+        console.log(m2.get(max));
+    </script>
+</body>
+</html>

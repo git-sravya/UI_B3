@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Object Literal
+       const user= {'Name':'John','Password':'1234','mobile':99999999}
+       var res=JSON.stringify(user);
+       var res1=JSON.parse(res);
+       console.log(res[0]);
+       console.log(user);
+
+       //2.new keyword
+       const user1=new Object();
+       user1.Name='Sam';
+       user1.Password='12344';
+       user1.mobile=9909090909;
+
+       //3. Object constructor
+
+       function Product(name,price)
+       {
+        this.name=name;
+        this.price=price;
+       }
+
+        Product.prototype.category='Electronics';
+        Product.prototype.display=function ()
+        {
+            console.log("Name= "+ this.name);
+            console.log("Price= "+ this.price);
+        }
+              
+        
+       const prod2=new Product('Laptop',998998);
+      
+       
+       console.log(prod2);
+
+       const prod3=new Product('Laptop1',998987);
+       console.log(prod3);
+
+    </script>
+</body>
+</html>

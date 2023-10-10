@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //IIFE -> Immediately invoked function expression
+
+        (function Multiplication(a,b)
+        {
+            console.log(a*b);
+        })(2,4)
+
+        const Multiply= (function(a,b){
+            console.log(a*b);
+            return (a*b);
+        })(7,8)
+
+        console.log(Multiply);
+
+    //     //Arrow functions, lambda functions
+    //     const Multiply2= (a,b) => {
+    //         return a*b;
+    //     }
+
+    //     const Multiply3= (a,b) =>  a*b;
+
+    //     const Greet= name => { console.log('Hi '+ name); };
+
+    //     Greet('Max');
+
+    //     var numbers=[23,45,12,67,89,99];
+
+    //     numbers.forEach((x) => {
+    //         console.log(x);
+    //     })
+
+    //    const result= numbers.find(x=>{
+    //         return x>25;
+    //     })
+
+    //     let sum=0;
+    //     numbers.forEach(x=>{
+    //             sum+=x;
+    //     })
+    //     console.log("Sum ="+ sum);
+
+       const total= numbers.reduce((sum,x)=>{
+            return sum+=x;
+        },0)
+
+    //     console.log("Total= "+total);
+        
+
+    </script>
+</body>
+</html>

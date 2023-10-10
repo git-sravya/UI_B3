@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+</head>
+<body>
+
+    <form action="" method="get"></form>
+    
+
+    <div class="p1">
+
+        <p class="p2">Inside div</p>
+        <table>
+            <tr><td>col1</td><td>col2</td><td>col3</td><td>col4</td></tr>
+            <tr><td>col1</td><td>col2</td><td id="td1">col3</td><td>col4</td></tr>
+            <tr><td>col1</td><td>col2</td><td>col3</td><td>col4</td></tr>
+            <tr><td>col1</td><td>col2</td><td>col3</td><td>col4</td></tr>
+            <tr><td>col1</td><td>col2</td><td>col3</td><td>col4</td></tr>
+        </table>
+
+        <div class="div3">
+
+        </div>
+
+    </div>
+    <div>
+        <h1>No paragraph</h1>
+    </div>
+    <p>This is outside div</p>
+    <script>
+        $(function(){
+            //$('#td1').prevAll().css('background-color','red');
+
+           // $('div').children().eq(2).css();
+            $('table').find('#td1').css('border-bottom','1px solid red');
+
+            $('p').first().css('color','green')
+
+           // $('div').not($('div').has('p')).css('background-color','yellow')
+
+            //$('tr:gt(2)').css('background-color','yellow')
+
+            $("div:not(.p1)").css('background-color','yellow')
+
+            $('.div3').append($('.p2').clone());
+
+        })
+           
+    </script>
+    
+</body>
+</html>

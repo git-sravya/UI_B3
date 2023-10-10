@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function is hoisted 
+        Message('sam');       
+        
+        function Message()
+        {
+            console.log('Hello');
+        }
+
+        function Message(name)
+        {
+            console.log('hi '+name);
+        }
+
+    //     //Function Expression
+    //     let Message1= function(){
+    //         console.log('Hi');
+    //     }
+    //     Message1();
+    //     Message1=function()
+    //     {
+    //         console.log('override');
+    //     }
+    //     Message1();
+    //     Message1=3;
+    //     console.log(Message1);
+
+    //     // //Arrow functions
+    //     // const Message3=function(){
+
+    //     // }
+
+    //     //FE is not hoisted
+    //    // Message1();
+
+    </script>
+</body>
+</html>

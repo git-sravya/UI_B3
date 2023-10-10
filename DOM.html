@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+      
+    <div id="div1">
+        <p id="p1">
+            This is a paragraph inside div.
+        </p>
+    </div>
+
+    <div class="div2">
+        <p class="p2">
+            Second paragraph.
+        </p>
+        <p class="p2" id="p3">
+            Third paragraph.
+        </p>
+    </div>
+
+    <input type="button" id="btn1" onclick="hideDiv()" value="Hide"/>
+
+    <script>
+         //alert boxes
+        //By Id
+         document.getElementById('p1').innerHTML='changed text';
+        // document.getElementById('div1').style='background-color:pink;color:blue';
+
+        // //By class Name
+         document.getElementsByClassName('p2')[0].innerHTML="New text"
+
+        //By query selector
+       document.querySelectorAll('#div1')[0].style='background-color:yellow'
+
+    //   var list= document.querySelectorAll('#p1,#p3,.p2');
+    //   for(var i=0;i<list.length;i++)
+    //   {
+    //     list[i].style='background-color:green'
+    //   }
+      
+      var status1=true;
+
+    function hideDiv()
+    {
+       var btnText= document.getElementById('btn1').value;
+
+        btnText= btnText=='Next' ? 'Prev' :'Next';
+
+       if(status1) 
+        {       
+        document.getElementById('div1').style='display:none';
+        document.getElementById('btn1').value='prev';
+        status1=false;
+
+        }
+        else{        
+        document.getElementById('div1').style='display:unset';
+        status1=true;
+        }
+        
+    }
+
+    </script>
+</body>
+</html>

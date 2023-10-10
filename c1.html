@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <button id="btn1" onclick="change()">counter</button>
+    
+<script>
+        
+        // function outer()
+        // {   
+        //         var counter=0;
+        //         function inner(){
+        //             counter=counter+1;
+        //             console.log(counter);
+                   
+        //         }
+        //         inner()
+        // }
+
+        function func1()
+        {
+
+        }
+
+       const result= function()
+        {   
+            var counter=0;
+            console.log("Counter " + counter);
+            return  function inner()
+                {
+                    counter=counter+1;
+                    return counter;
+                }
+               
+        }();
+
+        function change()
+        {
+        document.getElementById('p1').innerHTML=result();
+
+        }
+
+
+       
+
+     
+
+        
+    </script>
+</body>
+</html>

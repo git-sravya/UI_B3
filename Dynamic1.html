@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p2">This is exisiting para.</p>
+    </div>
+
+    <script>
+        let parentDiv=document.getElementById('div1');
+        let para1=document.getElementById('p2');
+
+        //Create paragraph
+        var para=document.createElement('p');
+        para.setAttribute('id','p1');
+        para.innerHTML="Dynamic paragraph";
+
+        parentDiv.appendChild(para);
+
+        var heading1=document.createElement('h1');
+        heading1.setAttribute('id','heading1');
+        heading1.innerHTML='Main heading';
+       // heading1.insertAdjacentElement(para1,null);
+        para.appendChild(heading1);
+
+        let heading1new=document.getElementById('heading1');
+        para.removeChild(heading1new);
+
+        parentDiv.remove();
+
+
+    </script>
+</body>
+</html>

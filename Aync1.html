@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        setTimeout(func3,3000);       
+        func3();
+        func2();
+       
+        const intervalfunc= setInterval(() => {
+            console.log('Call every 3 seconds')
+            }, 3000);
+            
+        
+            function func4()
+            {
+                clearInterval(intervalfunc);
+            }
+
+        function func1()
+        {
+            console.log('func 1')
+        }
+        function func2()
+        {
+            console.log('func 2')
+        }
+        function func3()
+        {
+            console.log('func 3')
+        }
+    </script>
+</body>
+</html>

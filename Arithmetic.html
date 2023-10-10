@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        <label for="fno">First Number</label>
+        <input type="text" name="fno" id="fno">
+    </p>
+    <p>
+        <label for="sno">Second Number</label>
+        <input type="text" name="sno" id="sno">
+    </p>
+    <p>
+        <input type="button" value="Add" onclick="Add()"/>
+    </p>
+    <p>
+        <label for="result">Result</label>
+        <input type="text" name="result" id="result">
+    </p>
+    <script>
+        function Add()
+        {
+           document.write(parseInt(document.getElementById('fno').value)
+                                                            +parseInt(document.getElementById('sno').value))
+        // var color=document.getElementById('fno').value;
+        // if(color=='green')
+        // {
+
+        // }
+        // else if(color=='red')
+        // {
+
+        // }
+        // else{
+
+        // }
+                                                        
+                                                        }
+    </script>
+</body>
+</html>

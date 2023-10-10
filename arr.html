@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var boolarr=[true,true,undefined,null,false,false,true];
+        const op=boolarr.reduce((res,item)=>{
+           return  (item) ? res+1 : res;
+        },0);
+
+        console.log(op);
+
+        //Hello
+
+      //  HHeelllloo
+
+        // String 
+        // SSttrriinngg
+
+        var str=Array.from("Hello");//Ifmmp
+
+       const op2= str.reduce((res,s)=>{
+              return  res=res+s+s;       
+                 
+        },'')
+
+        var f="good";
+        console.log(String.fromCharCode(102));//Convert Ascii into character
+
+       // Hello- String//Tusjoh
+       // HHeelloo- SSttrriinngg
+
+        console.log(op2);
+    </script>
+</body>
+</html>

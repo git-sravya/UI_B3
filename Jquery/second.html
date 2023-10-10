@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+</head>
+<body>
+   Enter Text <input id="txt1" type="text">
+   <input type="button" id="btn1" value="Click">
+   <img src="" id="img1" alt="">
+
+   <div id="div1">
+    <p id="p1">This is a paragraph</p>
+    <p id="demo">This is a paragraph</p>
+   </div>
+
+    <ul id="ul1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>Bread</li>
+    </ul>
+    
+   <script>
+    $(function(){
+        $('#btn1').click(function(){
+            $('#p1').html($('#txt1').val());
+            $('#img1').attr('src','');
+
+        })
+
+        $('#div1').hover(function(){
+            //$('#p1').fadeOut(4000);
+            $(this).css('color','green')
+        })
+
+        $('#div1').mouseout(function(){
+            $('#p1').fadeIn(3000);
+        })
+
+        $('#p1').append(' Some text')
+        $('#p1').after('<h1> after content</h1>')
+        $('#ul1 li').eq(1).after('<li>Juice</li>');
+
+        $('p').remove('#p1, #demo');
+
+        
+    })
+
+   </script>
+</body>
+</html>

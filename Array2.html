@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var A=[1,2,3,4,5,6,7,8];
+        var B =[9,10,11,12,13,14];
+
+       // A.push(B);
+       var result= A.concat(B);
+        console.log(result);
+
+        const C=[A,B];
+        console.log(C[0][3]);
+
+        //Spread Operator
+        const D=[...A,...B]
+        console.log(D);
+
+        const Arr=[1,2,4,[5,[6,7]],8,[9,10]];
+        console.log(...Arr);
+
+        var result2=Arr.flat().flat();
+        console.log(result2)
+
+        var colors=['red','green','blue','yellow','orange','pink'];
+
+        console.log(colors.slice(-4,-2))
+
+       // console.log(colors.splice(2,2));
+       // console.log(colors);
+
+        console.log(colors.splice(2,2,'black','white','violet'));
+        console.log(colors)
+
+        var s='hello'.startsWith('h');
+
+        //Destructuring of arrays
+
+        let cities=['hyderabad','bangalore','mumbai','pune','delhi'];
+
+        let [h,b,...d]=cities;
+
+        //rest operator
+
+        function Add(...a)
+        {
+            var sum=0;
+           for(x of a)
+           {
+            sum+=x;
+           }
+           return sum;
+        }
+        
+
+       
+        console.log(Add(1,2,6,7));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+<body>
+    <p class="p1"></p>
+    <button id="btn1">Click</button>
+
+    <div id="div1">
+        <p id="p2"><pre>Some <b>some</b> text</pre></p>
+        <button id="btn2">Click2</button>
+    </div>
+
+    <script>
+        $(function()
+        {  
+            $('#btn1').click(function(){
+                $('.p1').html('Hi')
+                $('.p1').css({'color':'red','background-color':'yellow'});
+
+            }) 
+            
+            $('#div1').hover(function()
+            {
+                $('#p2').css({'color':'green','background-color':'yellow'});
+            })
+            
+
+        })
+    </script>
+</body>
+</html>
