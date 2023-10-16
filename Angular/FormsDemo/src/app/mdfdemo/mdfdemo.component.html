@@ -1,0 +1,24 @@
+<p>mdfdemo works!</p>
+<form [formGroup]="mdfForm" (ngSubmit)="Register()">
+<p>
+    <label for="name"></label>
+    <input type="text" name="name" formControlName="name">
+</p>
+<p>
+    <label for="email">Email</label>
+    <input type="text" name="email" formControlName="email"/>
+</p>
+<p>
+    <label for="password">Password</label>
+    <input type="text" name="password" formControlName="password"/>
+</p>
+<p>
+    <label for="mobile">Mobile</label>
+    <input type="number" name="mobile" formControlName="mobile"/>
+</p>
+
+<p>
+    <input type="submit" value="submit">
+</p>
+
+</form>

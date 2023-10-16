@@ -1,0 +1,22 @@
+<p>viewproducts works!</p>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.description}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+        <td>
+            <input type="button" [routerLink]="['/update/', p.id]"  value="Update"/> 
+            <input type="button" (click)="delete(p.id)" value="Delete"/> </td>
+    </tr>
+</table>
