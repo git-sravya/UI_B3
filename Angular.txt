@@ -1,0 +1,28 @@
+ng g c sample
+
+ng generate component sample
+
+ng serve -o
+
+DataBinding:
+1.One way(ts to html)
+i.string interpolation - {{}}
+ii.property binding - []
+iii.event binding -  ()
+
+2.Two way (ts to html and html to ts)
+ngModel - [()]
+FormsModule
+
+Directives:
+1.component directives
+2.structural directives
+(Manipulates the DOM)
+*ngIf
+ngSwitch
+*ngFor
+3.Attribute directives
+[ngStyle]
+[ngClass]
+
+

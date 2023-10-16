@@ -1,0 +1,25 @@
+git init
+git status
+//to stage one file
+git add filename
+
+//To stage all files
+git add .
+
+//To commit
+git commit -m "first commit"
+
+git config user.name '' 
+git config user.email ''
+
+Branch
+git branch 'branchname'
+git merge branch1
+git branch -d 'branch1'
+
+move files:
+mv file1.txt file2.txt
+git add file2.txt
+git rm file1.txt
+
+ 

@@ -1,0 +1,76 @@
+Mouse events:
+
+Hover
+click
+dblclick
+
+keyboard:
+keypress,keydown,keyup
+
+Attr:
+attr
+
+visibilty:
+
+hide()
+show()
+toggle()
+fadeIn()
+fadeOut()
+
+
+Add elements:
+append
+prepend
+after
+before
+
+Remove elements:
+
+Remove
+empty
+
+
+Traversal:
+
+Parent:
+parent
+parents()
+parentsuntil()
+
+siblings:
+next()
+nextall()
+nextuntil()
+
+prev()
+prevall()
+prevuntil()
+
+Children:
+children()
+find()
+
+Filtering()
+
+first()
+last()
+eq()
+not()
+has()
+
+clone()
+
+C - create
+R - read
+U - update
+D - delete
+
+Verbs
+
+HttpGet
+HttpPost
+HttpPut
+HttpDelete
+
+

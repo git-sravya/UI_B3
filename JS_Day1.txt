@@ -1,0 +1,128 @@
+Javascript:
+
+1.Interpreted Language.
+2. Not strongly typed
+
+Hoisting
+
+var 
+1.It is hoisted
+2.Can be redeclared.
+3.Value can be changed.
+
+Let
+1.Not hoisted
+2.value can be changed
+3. Cannot be redecalred
+4.Block scoped
+
+Const
+1.Not hoisted
+2.Value cannot be changed.
+3.Cannot be redeclared.
+4.Block scoped
+
+Operators:
+Arithmetic operators
++,-,*,/,%
+
+increment and decrement
+i++ , ++i
+i--, --i
+ 
+conditional or relational operators
+>,<,>=,<=,==,===,!=
+
+Ternary: 
+? :
+
+=== -> strict equality or identical operator
+
+logical 
+&& , || ,!
+
+bitwise
+& ,|
+
+2 & 4
+
+0010
+0100
+
+
+2 | 4
+
+if:
+
+if(condition)
+{
+statements;
+}
+else
+{
+}
+
+
+if(condition)
+{}
+else if(condition)
+else
+
+
+switch(variable)
+{
+case value1:
+		statements;
+		break;
+case value2: 
+	statements;
+	break;
+default:
+	statements;
+	break;
+}
+
+
+iterative statements:
+for:
+for(initilization;condition;increment or decrement)
+{
+
+}
+while:
+do while:
+
+
+Jump statements:
+continue
+break
+
+
+for of 
+for in
+foreach
+
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+
+1
+2  3
+4  5  6
+7  8  9  10
+11 12 13 14 15
+
+&nbsp;
+
+string:
+
+push,pop - right
+unshift,shift - left
+
+
+
+

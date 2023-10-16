@@ -1,0 +1,13 @@
+
+
+
+class Product
+{
+	public string Name;
+	public float price;
+	Product(Name,Price)
+	{
+	this.Name=Name;
+	this.Price=Price;
+	}
+}
