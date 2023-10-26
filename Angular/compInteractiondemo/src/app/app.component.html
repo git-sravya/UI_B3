@@ -1,0 +1,5 @@
+<app-input [pdata]="name" [pemail]="email"></app-input>
+
+<app-output (child)="message=$event" (child1)="message2=$event" ></app-output><br>
+{{message}}
+{{message2}}

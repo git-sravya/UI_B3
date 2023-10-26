@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../product.service';
 
@@ -11,18 +11,18 @@ import { ProductService } from '../product.service';
 export class UpdateComponent {
   productForm!: FormGroup;
 
-  constructor(public fb: FormBuilder,private router: ActivatedRoute,
+  constructor(public fb: FormBuilder,private router: ActivatedRoute,router1:Router,
                         public service:ProductService)
     {
 
-      service.GetById(this.router.snapshot.params['productid']).subscribe(data=>{
+      service.GetById(this.router.snapshot.params['productid']).subscribe(x=>{
 
         this.productForm = this.fb.group({
-          id:[data['id']],
-          name: [data['name']],
-          description: [data['description']],
-          price: [data['price']],
-          quantity: [data['quantity']],    
+          id:new FormControl('x[id]',Validators.required),
+          name: [x['name']],
+          description: [x['description']],
+          price: [x['price']],
+          quantity: [x['quantity']],    
         })
       });
 
